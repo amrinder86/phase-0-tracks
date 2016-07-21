@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pair Project</title>
+</head>
+<body>
+
+  <form name="practice_project" action="success.html" method="post">
+    <fieldset>
+      <div>
+        <label>Enter name:</label>
+        <input type="text" name="name">
+      </div>
+
+      <div>
+        <label>Enter Email:</label>
+        <input type="email" name="email">
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <div>
+        <label>Project name:</label>
+        <input type="text" name="project_name" placeholder="Name this project">
+      </div>
+
+      <div>
+        <label>Type of project:</label>
+        <select name="project">
+          <option value="office">Office</option>
+          <option value="school">School</option>
+          <option value="home">Home</option>
+        </select>
+      </div>
+
+      <div>    
+        <label>Choose a completion date:</label>
+        <input type="date" name="date">
+      </div>
+
+      <div>
+        <label>Check the projects you have done in the past</label>
+        <input type="checkbox" name="proj_name" selected="selected" value="Office"> Office
+        <input type="checkbox" name="proj_name" value="School"> School
+        <input type="checkbox" name="proj_name" value="Home"> Home
+        <input type="checkbox" name="proj_name" value="Other"> Other
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <textarea name="textarea" rows="5" cols="50">Write comments here</textarea>
+    </fieldset>
+    
+    <button type="submit">Save this project</button>
+  </form>
+</body>
+</html>
