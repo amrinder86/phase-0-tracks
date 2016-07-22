@@ -1,6 +1,5 @@
-# Git Definitions
 
-**Instructions: ** Define each of the following Git concepts.
+ Hello Emmanuel
 
 * What is version control?  Why is it useful?
 ```
