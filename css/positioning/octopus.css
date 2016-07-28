@@ -1,12 +1,30 @@
 
 
 
-#octopus {
-  position: absolute;
-}
-#hat {
-  position: absolute;
-}
 #glasses {
-  position: absolute;
+display: block;
+  margin: auto;
+  position: relative;
+  z-index: 3;
+  top: 260px;
+}
+
+
+
+
+#hat {
+  position: relative;
+ bottom: 250px;
+ 
+  display: block;
+   margin: auto;
+   z-index: 2;}
+
+
+   #octopus {
+    top: 100px;
+  position: relative;
+  display: block;
+  margin: auto;
+  z-index: 1;
 }
