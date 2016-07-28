@@ -3,28 +3,27 @@
 
 #glasses {
 display: block;
-  margin: auto;
   position: relative;
-  z-index: 3;
   top: 260px;
-}
+  margin: auto;
+  z-index: 3;
+  }
 
 
 
 
 #hat {
-  position: relative;
- bottom: 250px;
- 
   display: block;
+  position: relative;
+  bottom: 250px;
    margin: auto;
    z-index: 2;}
 
 
    #octopus {
-    top: 100px;
+    display: block;
   position: relative;
-  display: block;
+  top: 100px;
   margin: auto;
   z-index: 1;
 }
