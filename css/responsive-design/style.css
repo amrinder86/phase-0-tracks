@@ -1,5 +1,6 @@
 body {
   max-width: 960px;
+  margin: 0 auto;
 }
 
 #external-links {
@@ -8,11 +9,18 @@ body {
   vertical-align:top;
 }
 
+#image {
+    float: left;
+    width: 500px;
+
+}
+/*#relative {
+    position: absolute;
+}*/
+
 main {
   width: 78.75%;
   display: inline-block;
-
-
 }
 
 blockquote {
@@ -32,7 +40,7 @@ cite {
 }
 
 /* you're welcome to edit the
-image, figure, and figcaption CSS if you'd like, 
+image, figure, and figcaption CSS if you'd like,
 but it's optional! */
 img {
   width: 100%;
@@ -46,4 +54,29 @@ figure {
 figcaption {
   font-style: italic;
   text-align: right;
+}
+
+@media screen and (max-width: 995px) {
+
+    #external-links {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    main {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        min-width: 350px;
+    }
+
+    #external-links {
+        text-align: center;
+    }
 }
