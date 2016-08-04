@@ -12,3 +12,16 @@ hamster_good = gets.chomp
 
 puts "What is the estimated age of the hamster?"
 hamster_age = gets.chomp
+
+if hamster_age == ""
+  hamster_age = nil
+end
+
+if hamster_good == "yes"
+  hamster_good = "wonderful"
+else
+  hamster_good = "terrible"
+end
+
+print "The hamster's name is #{hamsters_name}. It has a volume level of #{hamsters_volume} and has a fur color #{hamster_color}. It is a #{hamster_good} candidate for adoption and has an estimated age of #{hamster_age}."
+
