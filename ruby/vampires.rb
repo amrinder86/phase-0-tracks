@@ -52,6 +52,10 @@ puts "Would you like to enroll in the company’s health insurance?"
   
   
  end
+ https://github.com/HadjirMashiri/phase-0-tracks/blob/master/ruby/vampires.rb
+
+So far through my coding journey I've definitely made some very common good workflow mistakes. Indenting your code is the main one so far.I didn't pay much attention to identing my code in HTML and CSS which is very bad but I'm working on it.Trying to get used to reading lot of code will also take some time but I'm doing my best to accomplish it.
+I'm still confused about IRB so I'm mostly just using online source repl.it to test my code but hopefully I'll get a hang of IRB soon so I can save time and be more efficient.
   
 
   
