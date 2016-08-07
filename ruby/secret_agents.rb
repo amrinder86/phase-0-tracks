@@ -1,5 +1,4 @@
-  
-
+  #Method declaration
   def encrypt(a)
     index = 0
       while index < a.length
@@ -14,6 +13,8 @@
     end
     return a
 end
+#encrypt("abc")
+#encrypt("zed")
 
 def decrypt (b)
   index = 0
@@ -26,6 +27,11 @@ def decrypt (b)
     end
     return b
 end
+
+#decrypt("bcd")
+#decrypt("afe")
+
+#decrypt(encrypt("swordfish"))
 
 #our method works because our returning and storing values rather than just displaying information.
 
