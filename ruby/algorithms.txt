@@ -1,0 +1,39 @@
+# Assuming robot is standing in front of elevator on 11th floor and building has a total of 20 floors.
+-Look straight ahead
+-Look for two buttons that are either flashing or solid .
+-once located
+-If you want to go up 
+    press the Up button
+else 
+  press down
+
+-Once the elevator door opens
+
+-let the people get out of elevator first
+    then Proceed forward to enter the elevator
+
+- Decide which floor you want to go
+  locate button on elevator that display 1-20.
+    press the corresponding button to desired floor level.
+
+-Once you see the floor number
+  press that button
+
+- Once the floor number is selected 
+  if the elevator is crowded
+    stand at any empty space
+ else
+    choose desired location to stand.
+
+-Wait and enjoy the ride but Keep and eye on floor level.
+
+-Once the desired floor level flashes
+  Wait for the elevator door to open.
+
+If you are standing in back of the elevator 
+    wait few seconds and let other people go first.
+  else 
+    proceed forward to exit the elevator once the elevator door opens.
+
+Now wait for further instructions.
+
