@@ -1,0 +1,97 @@
+# Telling robot how to use the Elevator
+
+# Assuming robot is standing in front of elevator on 11th floor and building has a total of 20 floors.
+-Look straight ahead
+-Look for two buttons that are either flashing or solid .
+-once located
+-If you want to go up 
+    press the Up button
+else 
+  press down
+
+-Once the elevator door opens
+
+-let the people get out of elevator first
+    then Proceed forward to enter the elevator
+
+- Decide which floor you want to go
+  locate button on elevator that display 1-20.
+    press the corresponding button to desired floor level.
+
+-Once you see the floor number
+  press that button
+
+- Once the floor number is selected 
+  if the elevator is crowded
+    stand at any empty space
+ else
+    choose desired location to stand.
+
+-Wait and enjoy the ride but Keep and eye on floor level.
+
+-Once the desired floor level flashes
+  Wait for the elevator door to open.
+
+If you are standing in back of the elevator 
+    wait few seconds and let other people go first.
+  else 
+    proceed forward to exit the elevator once the elevator door opens.
+
+Now wait for further instructions.
+
+#########################################################################
+
+# How to get up to brush.
+#Assuming I'm sleeping and my alarm starts to ring and I don't feel like flossing today.
+- Locate the phone on bed
+-If phone not found on bed 
+  look under pillow 
+else 
+  look on carpet.
+
+- Once phone is located
+
+- Turn the Alarm off
+
+- If further alarms are on
+    turn all of them off.
+  else 
+    put the phone away.
+
+- Now get up from bed 
+    Proceed to bathroom.
+- Locate the brush jar by sink
+    once located
+- Pick the blue toothbrush and white toothpaste 
+- open the toothpaste tube cap
+- Pour some toothpaste on toothbrush 
+  and close the toothpaste tube cap and put it back in jar.
+
+- Now with other hand turn the faucet on
+    turn it to right to get cold water out.
+- Clean both hands.
+  
+- Now Rinse the mouth and start brushing your teeth
+    Turn off he faucet with other hand.
+  
+- When done brushing
+    Turn the faucet back on and move faucet's knob to right.
+
+Put the brush under the faucet. Clean it and put it back in jar.
+
+Now Rinse your mouth 
+    
+  Until mouth feels clean 
+     keep rinsing  
+  else 
+     stop rinsing.
+
+- Once done rinsing 
+
+- Turn the faucet off .
+- Look right behind you for towel.
+- grab the towel and wipe your face off.
+- once done put the towel back and you are done brushing.
+
+
+
