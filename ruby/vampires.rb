@@ -32,6 +32,7 @@ puts "Our company cafeteria serves garlic bread. Should we order some for you? (
 
 puts "Would you like to enroll in the company’s health insurance? (yes/no)"
   health_insurance = gets.chomp
+  
   if health_insurance == "no"
     health_insurance = false
   elsif 
