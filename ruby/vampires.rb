@@ -14,7 +14,7 @@ puts "#{name},How old are you?"
   age_year = gets.chomp.to_i
  
 
-  puts " #{name}, What year were you born in?"
+  puts "#{name}, What year were you born in?"
     year_born = gets.chomp.to_i
  
  correct_age = 2016 - age_year
@@ -37,8 +37,30 @@ puts "Would you like to enroll in the company’s health insurance?"
     
     health_insurance == "yes"
     health_insurance = true
+
   end
   
+    allergies =""
+    until 
+      allergies == "sunshine" || allergies == "done" 
+      puts "Name any allergies that you have? one by one. write done when finished"
+        allergies=gets.chomp
+
+      if allergies == "sunshine"
+      puts "Probably a vampire!!"
+      allergies = true
+      break
+      elsif allergies == "done"
+        puts "thanks for letting us know"
+        allergies = true
+        break
+      end
+      
+      end
+
+
+
+
 
    if (year_born == correct_age) && (garlic_bread || health_insurance)
   
