@@ -30,3 +30,30 @@ puts "Would you like to enroll in the company’s health insurance?"
     health_insurance = true
   end
   
+
+   if (year_born == correct_age) && (garlic_bread || health_insurance)
+  
+      puts "Probably not a vampire."
+  
+  
+ elsif (year_born != correct_age) && (garlic_bread || health_insurance)
+  
+  puts "Probably a vampire."
+  
+  
+  
+  
+  end
+  if (year_born != correct_age) && (garlic_bread && health_insurance)
+  
+    
+    puts "Almost certainly a vampire."
+end
+  
+  if 
+    name == "Drake Cula" || name == "Tu Fang"
+    puts "Definitely a Vampire"
+  
+  
+  end
+  
