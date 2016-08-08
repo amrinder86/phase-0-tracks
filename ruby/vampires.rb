@@ -14,22 +14,23 @@ puts "#{name},How old are you?"
   age_year = gets.chomp.to_i
  
 
-  puts "#{name}, What year were you born in?"
+puts "#{name}, What year were you born in?"
     year_born = gets.chomp.to_i
  
- correct_age = 2016 - age_year
+  correct_age = 2016 - age_year
     
 puts "Our company cafeteria serves garlic bread. Should we order some for you? (yes/no)"
-  garlic_bread = gets.chomp
+    garlic_bread = gets.chomp
   
   if garlic_bread == "no"
     garlic_bread = false
   elsif
     garlic_bread == "yes"
     garlic_bread = true
+
   end
 
-puts "Would you like to enroll in the company’s health insurance?"
+puts "Would you like to enroll in the company’s health insurance? (yes/no)"
   health_insurance = gets.chomp
   if health_insurance == "no"
     health_insurance = false
@@ -41,17 +42,19 @@ puts "Would you like to enroll in the company’s health insurance?"
   end
   
     allergies =""
+    
     until 
       allergies == "sunshine" || allergies == "done" 
-      puts "Name any allergies that you have? one by one. write done when finished"
+      puts "Name any allergies that you have one by one?.Write done when finished."
         allergies=gets.chomp
 
       if allergies == "sunshine"
       puts "Probably a vampire!!"
       allergies = true
       break
+      
       elsif allergies == "done"
-        puts "thanks for letting us know"
+        puts "Thanks for letting us know."
         allergies = true
         break
       end
@@ -62,29 +65,29 @@ puts "Would you like to enroll in the company’s health insurance?"
 
 
 
-   if (year_born == correct_age) && (garlic_bread || health_insurance)
+  if (year_born == correct_age) && (garlic_bread || health_insurance)
   
       puts "Probably not a vampire."
   
   
  elsif (year_born != correct_age) && (garlic_bread || health_insurance)
   
-  puts "Probably a vampire."
+      puts "Probably a vampire."
   
-  end
 
-  if (year_born != correct_age) && garlic_bread && health_insurance
+  elsif (year_born != correct_age) && garlic_bread && health_insurance
   
     puts "Almost certainly a vampire."
-  end
   
-  if 
-    name == "Drake Cula" || name == "Tu Fang"
+    
+  elsif name == "Drake Cula" || name == "Tu Fang"
     puts "Definitely a Vampire"
 
-  
-  
+  else
+    puts "Results inconclusive "
   end
 
   employees_processed += 1
 end
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
