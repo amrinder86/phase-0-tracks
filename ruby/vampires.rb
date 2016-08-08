@@ -1,3 +1,12 @@
+
+puts "How many employees will we processed today?"
+  employee_count = gets.chomp.to_i
+
+employees_processed = 0
+
+until 
+  employees_processed == employee_count
+
 puts " What is your name?"
   name = gets.chomp
  
@@ -40,20 +49,20 @@ puts "Would you like to enroll in the company’s health insurance?"
   
   puts "Probably a vampire."
   
-  
-  
-  
   end
-  if (year_born != correct_age) && (garlic_bread && health_insurance)
+
+  if (year_born != correct_age) && garlic_bread && health_insurance
   
-    
     puts "Almost certainly a vampire."
-end
+  end
   
   if 
     name == "Drake Cula" || name == "Tu Fang"
     puts "Definitely a Vampire"
+
   
   
   end
-  
+
+  employees_processed += 1
+end
