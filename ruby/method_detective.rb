@@ -7,10 +7,10 @@
 "iNvEsTiGaTiOn".swapcase
 # => “InVeStIgAtIoN”
 
-# "zom".<???>
+ "zom".insert(-2, "o")
 # => “zoom”
 
-# "enhance".<???>
+ "enhance".center(15)
 # => "    enhance    "
 
  "Stop! You’re under arrest!".upcase
@@ -19,7 +19,12 @@
  "the usual".insert(-1, " suspects")
 #=> "the usual suspects"
 
-# " suspects".<???>
+ " suspects".insert(0, "the usual")
+
+#or
+
+ " suspects".prepend "the usual"
+  
 # => "the usual suspects"
 
  "The case of the disappearing last letter".chop
@@ -31,9 +36,12 @@
  "Elementary,    my   dear        Watson!".squeeze
 # => "Elementary, my dear Watson!"
 
-# "z".<???>
+ "z".ord
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
+
+# After googling I found out that 122 is ASCII number of Z. After that I googled for 
+#How to get a ASCII value of a string in ruby and learned about .ord method.
 
  "How many times does the letter 'a' appear in this string?".count"a"
 # => 4
