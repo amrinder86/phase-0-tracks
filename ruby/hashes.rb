@@ -19,6 +19,8 @@
 #print the hash
 
 #creating a hash and gathering data
+
+
   
 client_info = {}
 
@@ -41,5 +43,20 @@ if client_info[:kitchen_tv] == "n"
 else 
     client_info[:kitchen_tv] = true
   end
-
+puts "Here is what you have told us so far:"
 p client_info
+
+puts "would you like to make any changes to your provided info?(yes/no)"
+  response = gets.chomp
+if response == "yes"
+  puts "what would you like to update: Select from  \nname \nage \nchildren \ndecor_theme  \nkitchen_tv"
+  response2= gets.chomp
+if response2 == "name"
+  client_info[:name] = gets.chomp.to_s
+
+else
+  puts "Okay here is your information again."
+  p client_info
+  puts "Thank you very much for your info.We will give you a quote in 24 hours."
+end
+end
