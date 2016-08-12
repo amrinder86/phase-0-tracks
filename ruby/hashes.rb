@@ -4,6 +4,7 @@
 #number of children (integer)
 #Decor theme (string/symbol)
 #Colors they hate or love 
+#would you like a small tv in the the kitchen? (boolean)
 #We can have our own as long as it's good 
 #mix of string, integer and boolean data
 
@@ -17,3 +18,28 @@
 
 #print the hash
 
+#creating a hash and gathering data
+  
+client_info = {}
+
+puts "what is your name?"
+  client_info[:name] = gets.chomp.to_s
+
+puts "How old are you?"
+  client_info[:age] = gets.chomp.to_i
+
+puts "How many children do you have?"
+  client_info[:children] = gets.chomp.to_i
+
+puts "What decor theme would you prefer"
+  client_info[:decor_theme] = gets.chomp
+
+puts "Would you like a small tv in the kitchen? (y/n)"
+    client_info[:kitchen_tv] = gets.chomp
+if client_info[:kitchen_tv] == "n"
+    client_info[:kitchen_tv] = false
+else 
+    client_info[:kitchen_tv] = true
+  end
+
+p client_info
