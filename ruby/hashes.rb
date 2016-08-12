@@ -48,15 +48,36 @@ p client_info
 
 puts "would you like to make any changes to your provided info?(yes/no)"
   response = gets.chomp
-if response == "yes"
-  puts "what would you like to update: Select from  \nname \nage \nchildren \ndecor_theme  \nkitchen_tv"
+if response == "no"
+  puts "Here is your information again."
+    p client_info
+  puts "Thank you very much for your info.We will give you a quote in 24 hours."
+  
+ elsif response == "yes"
+  puts "what would you like to update: Select from  name age children decor_theme  kitchen_tv"
   response2= gets.chomp
-if response2 == "name"
+  if response2 == "name"
   client_info[:name] = gets.chomp.to_s
+  elsif response2 == "age"
+    client_info[:age] = gets.chomp.to_i
 
-else
-  puts "Okay here is your information again."
+elsif response2 == "children"
+    client_info[:children] = gets.chomp.to_i
+
+elsif response2 == "decor_theme"
+    client_info[:decor_theme] = gets.chomp
+
+elsif response2 == "kitchen_tv"
+    client_info[:kitchen_tv] = gets.chomp
+    
+  
+  end
+  puts "Here is your updated information."
   p client_info
   puts "Thank you very much for your info.We will give you a quote in 24 hours."
+
+
+
+
 end
-end
+
