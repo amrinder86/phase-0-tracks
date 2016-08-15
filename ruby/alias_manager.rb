@@ -5,6 +5,7 @@
 
 
 storing_names = {}
+
 loop do
   puts "please answer the following questions. Press 'ENTER' to continue or Type 'quit' to exit."
     input = gets.chomp
@@ -12,10 +13,13 @@ break if input == 'quit'
 
 puts "What's your first name?"
   first_name = gets.chomp.downcase
+
 puts "what's your last name?"
   last_name = gets.chomp.downcase
 
 real_name=last_name+" "+first_name
+
+for_hash_name=first_name.capitalize+" "+last_name.capitalize
 
 def name_method(real_name)
     vowels = "aeiou"
@@ -44,9 +48,15 @@ end
 end
 
       puts "Your spy name is - " +name_method(real_name)
-      storing_names[real_name] = modified_name
+      
+      modified_name = name_method(real_name)
+
+      storing_names[for_hash_name] = modified_name
 end
 
-    storing_names.each do |real_name, modified_name|
-  puts " #{real_name} is #{modified_name}!"
+    storing_names.each do |for_hash_name, modified_name|
+      puts "=======================================================" 
+      puts " #{for_hash_name}'s Spy Name is  #{modified_name}!"
+  #Since my real_name is "Last name + first name" my puts was typing it wrong name to display.
+  #so for_has_names  fixes that problem.
 end
