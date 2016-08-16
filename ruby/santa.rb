@@ -1,4 +1,10 @@
 class Santa
+  def initialize(gen, ethn)
+    @gender = ""
+    @ethnicity =""
+    @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+    @age = 0
+  end
     def speak(word)
      puts "Ho, ho, ho! Haaaappy holidays!"
   end 
