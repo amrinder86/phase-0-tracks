@@ -4,6 +4,7 @@ class Santa
     @ethnicity =""
     @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
     @age = 0
+    p "Initializing Santa instance ..."
   end
     def speak(word)
      puts "Ho, ho, ho! Haaaappy holidays!"
@@ -13,8 +14,5 @@ class Santa
       puts "That was a good #{cookie}"
      
    end
-   def initialize
-    p "Initializing Santa instance ..."
-     
-   end
+   
 end
