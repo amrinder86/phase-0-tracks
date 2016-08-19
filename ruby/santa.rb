@@ -1,6 +1,8 @@
 class Santa
+  
   attr_reader :age, :ethnicity
   attr_accessor :gender
+  
   def initialize(gen, ethn)
     @gender = gen
     @ethnicity = ethn
@@ -10,14 +12,16 @@ class Santa
     puts 'Initializing Santa instance ...'
     puts "This santa is #{@age} years old and has '#{@ethnicity}' ethnicity and is of '#{@gender}' gender. "
   end
+    
     def speak
      puts "Ho, ho, ho! Haaaappy holidays!"
-  end 
+    end 
    
     def eat_milk_and_cookies(cookie)
       puts "That was a good #{cookie}."
      
     end
+   
    # setter methods
     def celebrate_birthday=(integer)
       @age = integer+1
@@ -26,12 +30,15 @@ class Santa
     def get_mad_at(name)
       last_ranking = @reindeer_ranking.delete(name)
       @reindeer_ranking << last_ranking
+      puts "~~" * 28
+      puts "This santa is mad at '#{last_ranking}' and puts him in at last #{@reindeer_ranking}"
       
     end
     
    def genderi
     @gender
    end
+
 end
 reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 
@@ -53,12 +60,13 @@ santa.celebrate_birthday=0
 puts "Santa is now #{santa.age} years old and has #{santa.ethnicity} ethnicity"
 puts "--------------------------------------------------------------------------"
 =end
+
 santas = []
-for i in 1..5
+for i in 1..500
 puts "==" *28
 santa.speak
-
     santas << Santa.new(example_genders.sample, example_ethnicities.sample)
+    santa.get_mad_at(reindeer_ranking.sample)
 end
 
 
