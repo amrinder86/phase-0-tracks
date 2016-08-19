@@ -1,4 +1,6 @@
 class Santa
+  attr_reader :age, :ethnicity
+  attr_accessor :gender
   def initialize(gen, ethn)
     @gender = gen
     @ethnicity = ethn
@@ -24,19 +26,7 @@ class Santa
       last_ranking = name.last
       
     end
-    def gender=(word)
-      @gender = word
-      
-    end
-    #getter methods
-    def age
-      @age
-      end
-      
-    def ethnicity
-      @ethnicity
-      
-    end
+    
    def genderi
     @gender
    end
