@@ -7,3 +7,9 @@
 # any special Instructions like"keyboard should be backlit etc.)
 # create random price range from $700 to $2000.
 # provide the user with all laptop info with price.
+
+class Laptop
+  attr_reader :price, :hard_drive
+  attr_accessor :brand, :processor, :ram , :screen ,:Instructions
+
+end 
