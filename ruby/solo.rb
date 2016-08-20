@@ -10,6 +10,25 @@
 
 class Laptop
   attr_reader :price, :hard_drive
-  attr_accessor :brand, :processor, :ram , :screen ,:Instructions
+  attr_accessor :brand, :processor, :ram , :screen ,:instructions
+  def initialize (brand, processor, ram , screen ,instructions)
+    @brand = brand
+    @processor = processor 
+    @ram = ram 
+    @screen = screen
+    @instructions = instructions
+    @price = rand(700..2000)
+    @hard_drive = rand(1..3)
+    def build
+      puts "Your PC will be ready in next 3 days."
+    end
+
+    def customer_name(name)
+      puts "#{name},Thanks for choosing us to build your next laptop."
+      
+    end
+    def finish_order
+      puts "Please tell your family and friends about our services. Thanks again."
 
 end 
+
