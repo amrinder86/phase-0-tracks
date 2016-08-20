@@ -19,6 +19,8 @@ class Laptop
     @instructions = instructions
     @price = rand(700..2000)
     @hard_drive = rand(1..3)
+  end
+    
     def build
       puts "Your PC will be ready in next 3 days."
     end
@@ -29,6 +31,6 @@ class Laptop
     end
     def finish_order
       puts "Please tell your family and friends about our services. Thanks again."
-
+    end
 end 
 
