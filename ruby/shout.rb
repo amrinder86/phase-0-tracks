@@ -10,14 +10,22 @@ end
 =end
 module Shout
   def yell_angrily(words)
-    words + "!!!!!!!!!!" + "**someone starts crying**"
+    words + "!!!!!!!!!!" + "**Starts crying**"
   end
 end
+#Write two classes representing anything that might shout, and include the Shout module in those classes.
 
-Class Dog
-include Shout
+class Dog
+  include Shout
 end
 
-Class Cat
-include Shout
+class Cat
+  include Shout
 end
+#driver code
+
+dog = Dog.new
+puts dog.yell_angrily("Sit Down Skiller")
+cat = Cat.new
+puts  cat.yell_angrily("Stop doing that Bella")
+
