@@ -9,9 +9,9 @@
 # provide the user with all laptop info with price.
 
 class Laptop
-  attr_reader :price, :hard_drive
-  attr_accessor :brand, :processor, :ram , :screen ,:instructions
-  def initialize (brand, processor, ram , screen ,instructions)
+  attr_reader :price, :hard_drive,:customer_name
+  attr_accessor :brand, :processor, :ram , :screen ,:instructions, :customer_name
+  def initialize(brand, processor, ram , screen ,instructions)
     @brand = brand
     @processor = processor 
     @ram = ram 
@@ -19,6 +19,18 @@ class Laptop
     @instructions = instructions
     @price = rand(700..2000)
     @hard_drive = rand(1..3)
+    
+    puts "======================================\n
+    Details about your custom Laptop\n
+    Brand = #{brand}\n 
+    Processor = #{processor}\n
+    Ram = #{ram} \n
+    Hard Drive Storage = #{hard_drive} TB \n 
+    Screen Size = #{screen} inches\n 
+    Price =  $#{price}\n
+    Special instructions : #{instructions}
+     
+     "
   end
     
     def build
@@ -33,4 +45,25 @@ class Laptop
       puts "Please tell your family and friends about our services. Thanks again."
     end
 end 
+ laptop= Laptop.new(@brand, @processor, @ram , @screen ,@instructions)
 
+puts "     Welcome to Amrin Computers Inc.\n
+========================================"
+
+puts "Let's start taking your order.Please answer the folowing questions so we can help you build your next laptop that way you want it build :) "
+puts "What's your name?"
+name =gets.chomp
+laptop.customer_name(name)
+
+puts"What brand of laptop do you want to buy? (Hp, Apple, Dell etc.)"
+@brand=gets.chomp.to_s.capitalize
+
+puts"What kind of processor brand do you want for your laptop? (Intel or AMD)"
+@processor=gets.chomp.to_s
+puts "How much ram would you like to put in your laptop?. (8GB is recommeded by us)"
+@ram=gets.chomp.to_i
+puts "What size screen do you want for your laptop?(like 15.5 inches or 13.3 inches etc.) "
+@screen = gets.chomp.to_i
+
+ laptop= Laptop.new(@brand, @processor, @ram , @screen ,@instructions)
+ p laptop
