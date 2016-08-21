@@ -10,7 +10,7 @@
 
 class Laptop
   attr_reader :price, :hard_drive,:customer_name
-  attr_accessor :brand, :processor, :ram , :screen ,:instructions, :customer_name
+  attr_accessor :brand, :processor, :ram , :screen ,:instructions, :customer_name,:final_build
   def initialize(brand, processor, ram , screen ,instructions)
     @brand = brand
     @processor = processor 
@@ -20,6 +20,10 @@ class Laptop
     @price = rand(700..2000)
     @hard_drive = rand(1..3)
     
+    
+    
+  end
+  def final_order
     puts "======================================\n
     Details about your custom Laptop\n
     Brand = #{brand}\n 
@@ -28,10 +32,8 @@ class Laptop
     Hard Drive Storage = #{hard_drive} TB \n 
     Screen Size = #{screen} inches\n 
     Price =  $#{price}\n
-    Special instructions : #{instructions}
-     
-     "
-  end
+    Special instructions : #{instructions}"
+    end
     
     def build
       puts "Your PC will be ready in next 3 days."
@@ -45,25 +47,51 @@ class Laptop
       puts "Please tell your family and friends about our services. Thanks again."
     end
 end 
- laptop= Laptop.new(@brand, @processor, @ram , @screen ,@instructions)
+final_build =  []
+
+loop do
+ 
+ laptop=Laptop.new(@brand, @processor, @ram , @screen ,@instructions)
+ puts "Are you ready to build your new laptop? Press any button to countinue or type 'no' to stop "
+response =gets.chomp
+
+break if response == "no"
+  
+
+
 
 puts "     Welcome to Amrin Computers Inc.\n
 ========================================"
 
-puts "Let's start taking your order.Please answer the folowing questions so we can help you build your next laptop that way you want it build :) "
+
+
+
+puts "Let's start taking your order.Please answer the following questions so we can help you build your next laptop that way you want it build :) "\n
+
 puts "What's your name?"
-name =gets.chomp
-laptop.customer_name(name)
+name =gets.chomp.to_s
+puts "#{laptop.customer_name(name)}"
 
 puts"What brand of laptop do you want to buy? (Hp, Apple, Dell etc.)"
 @brand=gets.chomp.to_s.capitalize
 
-puts"What kind of processor brand do you want for your laptop? (Intel or AMD)"
-@processor=gets.chomp.to_s
-puts "How much ram would you like to put in your laptop?. (8GB is recommeded by us)"
+puts"What kind of processor brand do you want for your laptop? (Intel or AMD etc.)"
+@processor=gets.chomp.to_s.downcase
+if @processor == "intel"
+  puts "Great Choice!!!. We have Intel Core i7-4930K on sale right now."
+else
+  puts "We recommend Intel but if that's what you like. Great !!! :) "
+end
+puts "How much ram would you like to put in your laptop?. (8GB is recommended by us)"
 @ram=gets.chomp.to_i
 puts "What size screen do you want for your laptop?(like 15.5 inches or 13.3 inches etc.) "
 @screen = gets.chomp.to_i
 
- laptop= Laptop.new(@brand, @processor, @ram , @screen ,@instructions)
- p laptop
+final_build << laptop
+
+end
+
+ 
+ final_build.each do |laptop| puts "#{laptop.final_order}"
+ end
+
