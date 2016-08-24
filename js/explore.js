@@ -13,14 +13,14 @@
 
   ////////////////////////////////////////////////////////
   
-  function reverse(string){
+ // function reverse(string){
 
-  for (var i = string.length - 1; i >= 0; i--){
+  // for (var i = string.length - 1; i >= 0; i--){
     
-  console.log(string[i]);}
-}
+  //console.log(string[i]);}
+//}
 
-reverse("hello")
+//reverse("hello")
 
 
   // couldn't figure out how to store and add back the string and present it 
@@ -39,3 +39,6 @@ function reverse(string) {
   return new_string;
 }
 reverse("hello")
+ 
+ // reverse("I'm loving javascript so far")
+ 
