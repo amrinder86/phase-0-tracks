@@ -10,6 +10,8 @@
   //for (var i = str.length - 1; i >= 0; i--){
     
   //console.log(str[i]);}
+
+  ////////////////////////////////////////////////////////
   
   function reverse(string){
 
@@ -18,4 +20,22 @@
   console.log(string[i]);}
 }
 
-(reverse("hello")
+reverse("hello")
+
+
+  // couldn't figure out how to store and add back the string and present it 
+  //googled and landed on http://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/
+
+  ///////////////////////////////////////////////////////
+
+function reverse(string) {
+  
+  var new_string = '';
+  
+  for (var i = string.length - 1; i >= 0; i--)
+    
+    new_string += string[i];
+  
+  return new_string;
+}
+reverse("hello")
