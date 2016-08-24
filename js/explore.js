@@ -38,7 +38,21 @@ function reverse(string) {
   
   return new_string;
 }
-reverse("hello")
- 
+
  // reverse("I'm loving javascript so far")
+
+console.log(reverse("hello"));
+
+ var new_word = reverse("hello");
+
+if (new_word[0] == "p")
+{
+console.log("First letter is p.")}
+
+else if (new_word[0] == "o")
+{console.log("First letter is o.")}
+
+else 
+{console.log("First letter is neither o or p.")}
  
+
