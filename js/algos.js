@@ -17,7 +17,7 @@ var array1 = ["longest","longer","long", "this is long","this is very very long"
                 longest_word_so_far = array[i]
     }
   }
-      console.log(longest_word_so_far)
+      console.log("Longest word or phrase so far -->> " +longest_word_so_far);
   }
   
 
