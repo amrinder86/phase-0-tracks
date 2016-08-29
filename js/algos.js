@@ -56,12 +56,15 @@ var match = false
   return match 
 }
 
-//driver code
+
 var object6={name: "Steven", age: 58, eyes:"blue"}
 var object7={name: "Tamir", age: 54, eyes: "black"}
 
 var object8={name: "Steven", age: 54,eyes:"black"}
 var object9={name: "Tamir", age: 59, eyes:"blue"}
+
+// Release 2: Generate Random Test Data
+// I have no clue how to do this and I'm sorry I'm very short on time to search this week.I've just 30 minutes left to submit my this week's work.
 
 
 
@@ -76,3 +79,4 @@ compare_pair(object3,object4)
 
 console.log(compair_pair2(object6,object9)) // true
 console.log(compair_pair2(object6,object7)) // false
+
