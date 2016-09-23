@@ -27,3 +27,18 @@ sqlite> SELECT * FROM Stocks2;
 7|ZNGA|2.87|true|2
 8|TMUS|45.88|true|1
 9|HPQ|14.99|false|3
+
+3. Display the information in both tables using one query.
+
+sqlite> Select * FROM stocks2, stocks1 WHERE stocks2.recommendation_id=stocks1.id;
+1|AAPL|114.25|true|1|1|BUY
+2|GOOG|700.68|true|3|3|HOLD
+3|SPLS|8.46|true|2|2|SELL
+4|AMZN|789.74|true|1|1|BUY
+5|GE|29.85|false|3|3|HOLD
+6|TWTR|22.18|false|2|2|SELL
+7|ZNGA|2.87|true|2|2|SELL
+8|TMUS|45.88|true|1|1|BUY
+9|HPQ|14.99|false|3|3|HOLD
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
