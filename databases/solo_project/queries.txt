@@ -1,4 +1,5 @@
 
+1.Display the information in one table (either table is fine).
 ##Showing Information for stocks2 table##
 
 sqlite> Select * from stocks2;
@@ -8,6 +9,21 @@ sqlite> Select * from stocks2;
 4|AMZN|789.74|true|1
 5|GE|29.85|false|3
 6|TWTR|18.49|false|2
+7|ZNGA|2.87|true|2
+8|TMUS|45.88|true|1
+9|HPQ|14.99|false|3
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+## updating stock price of twitter(TWTR) to 22.18
+
+sqlite> UPDATE stocks2 SET stock_price=22.18 WHERE stock_name="TWTR";
+sqlite> SELECT * FROM Stocks2;
+1|AAPL|114.25|true|1
+2|GOOG|700.68|true|3
+3|SPLS|8.46|true|2
+4|AMZN|789.74|true|1
+5|GE|29.85|false|3
+6|TWTR|22.18|false|2
 7|ZNGA|2.87|true|2
 8|TMUS|45.88|true|1
 9|HPQ|14.99|false|3
