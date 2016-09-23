@@ -1,0 +1,13 @@
+
+##Showing Information for stocks2 table##
+
+sqlite> Select * from stocks2;
+1|AAPL|114.25|true|1
+2|GOOG|700.68|true|3
+3|SPLS|8.46|true|2
+4|AMZN|789.74|true|1
+5|GE|29.85|false|3
+6|TWTR|18.49|false|2
+7|ZNGA|2.87|true|2
+8|TMUS|45.88|true|1
+9|HPQ|14.99|false|3
