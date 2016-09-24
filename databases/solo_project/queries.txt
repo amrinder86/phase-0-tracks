@@ -42,3 +42,14 @@ sqlite> Select * FROM stocks2, stocks1 WHERE stocks2.recommendation_id=stocks1.i
 9|HPQ|14.99|false|3|3|HOLD
 
 4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT stocks2.stock_name,stocks2.stock_price,stocks2.on_nasdaq, stocks1.recommendation FROM stocks2 JOIN stocks1 ON stocks2.recommendation_id = stocks1.id;
+AAPL|114.25|true|BUY
+GOOG|700.68|true|HOLD
+SPLS|8.46|true|SELL
+AMZN|789.74|true|BUY
+GE|29.85|false|HOLD
+TWTR|22.18|false|SELL
+ZNGA|2.87|true|SELL
+TMUS|45.88|true|BUY
+HPQ|14.99|false|HOLD
