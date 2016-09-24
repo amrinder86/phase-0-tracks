@@ -66,3 +66,14 @@ sqlite> SELECT * FROM stocks2;
 6|TWTR|22.18|false|2
 7|ZNGA|2.87|true|2
 8|TMUS|45.88|true|1
+
+Release 3: Research on Your Own
+Try few different kinds of join methods
+
+sqlite>  Select stocks2.stock_name,stocks2.stock_price,stocks1.recommendation FROM stocks2 INNER JOIN stocks1 ON stocks2.recommendation_id = stocks1.id WHERE stocks1.id=1;
+AAPL|114.25|BUY
+AMZN|789.74|BUY
+TMUS|45.88|BUY
+
+sqlite> SELECT  stocks2.stock_name,stocks2.stock_price,stocks2.on_nasdaq FROM stocks2 RIGHT JOIN stocks2 ON stocks2.recommendation_id = stocks1.id;
+Error: RIGHT and FULL OUTER JOINs are not currently supported
