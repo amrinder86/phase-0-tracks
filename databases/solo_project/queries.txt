@@ -53,3 +53,16 @@ TWTR|22.18|false|SELL
 ZNGA|2.87|true|SELL
 TMUS|45.88|true|BUY
 HPQ|14.99|false|HOLD
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+##Delete all stocks that have "HOLD" recommendation HOLD is id = 3 in stocks1 table.##
+
+sqlite>  DELETE FROM stocks2 WHERE recommendation_id=3;
+sqlite> SELECT * FROM stocks2;
+1|AAPL|114.25|true|1
+3|SPLS|8.46|true|2
+4|AMZN|789.74|true|1
+6|TWTR|22.18|false|2
+7|ZNGA|2.87|true|2
+8|TMUS|45.88|true|1
