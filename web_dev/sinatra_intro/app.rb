@@ -44,3 +44,20 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+# Release 0: Add Routes
+get '/contact' do 
+  "123 Address Ct,Chicago,IL,60610"
+end
+
+get '/great_job' do
+  name = params[:name]
+  if name 
+    "Good job, #{name}!"
+  else
+    "Good job!"
+  end
+end
+get '/add/:num1/plus/:num2' do
+  "#{params[:num1].to_i} + #{params[:num2].to_i} = #{params[:num1].to_i + params[:num2].to_i}"
+  #show the user that what is being added and displays the result
+end
