@@ -4,4 +4,7 @@
  For two hours I'll only take breaks if I'm not getting or understanding anything or stuck on something If I'm following along video. If I'm learning what is being shown to me then no breaks in between 2 hours.
 
  After watching videos in first hour and saving some websites about jquery,I would like to go over my notes and what I need to research more on.I'll then google all those topics that I can in next one hour and read up on them.
- 
+
+ After about 2 hrs 
+ Watched few 15 min videos about Jquery and then watched some this video https://www.youtube.com/watch?v=BWXggB-T1jQ
+ Jquery seems really fun to work with. 
